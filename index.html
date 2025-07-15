@@ -1,63 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Win a $100 7-Eleven Gift Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Win a $100 7-Eleven Gift Card!</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #ffffff;
-      color: #222;
-    }
-    .container {
-      max-width: 480px;
-      margin: auto;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 20px;
       text-align: center;
     }
+
     img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #d32f2f;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
       margin-bottom: 20px;
     }
-    h1 {
-      font-size: 24px;
-      color: #d32f2f;
-    }
-    p {
-      font-size: 16px;
-      margin-bottom: 15px;
-    }
+
     .button {
-      background: #d32f2f;
-      color: white;
-      padding: 14px 24px;
-      border-radius: 6px;
-      font-size: 18px;
+      background-color: #d32f2f;
+      color: #fff;
+      padding: 14px 28px;
       text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
     }
+
+    .button:hover {
+      background-color: #b71c1c;
+    }
+
     .note {
-      font-size: 13px;
-      color: #777;
-      margin-top: 20px;
+      font-size: 12px;
+      color: #888;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .button {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAGQCAIAAADZR5NjAAAIoklEQVR4nO3by1KjQABAUTI1f61L/zuzsGQQAiHxmoeeU9ZUZKDTwQW3GnIYXo4DAACdP/eeAADATyOwAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABiAgsAICawAABivyKwjm/3ngEA8JschpfjvedwgfdUOrxefMi78cDZOOM+G1uuMAu7nUOdnPCNLc/z7IRc8Ye49N2/b3wA+G5/7z2B045vw+H1/7/Dx7X20ivu9Nj318vVrHGf49v8HcctXzEOuDa92c7T2d7AyZqZfeTrcurqUtw4YwDwFB40sGZmV9xZAw3nrt/LRLvN9ftsVeyc//A5g5avZx9q//lZi8vp/MctszGHzfBa7jysL4Od/HQA8Lye5hmscWln/HX4WOga1oPp5E2uxHuRjD/bew6TCZ88anuQ2QjbQTN8Pi07g3I8vbPzPEzO4XSf2ZY9Iy9bcPs1ADyvx13BWrujd6lvWrK6LgLWjtoz2nINb+NJqYvc5pmn6ZyX/zVYvgLgB3nQwJrdNrra3VdE9k/g7J57Brk6+64um7PTXt6sVFEA/HiP+y3C6XPuw6lv5O15zGjjiaLlUNNBqkWdPY9ArU1mbeN0kmvLV5c+hrXx7svJzA48O/KeRcTlsNuDA8Aje9zACn39m4AAAPv9isACALilp/kWIQDAsxBYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEBNYAAAxgQUAEPsHUY4HHm2yGs8AAAAASUVORK5CYII=" alt="7-Eleven $100 Gift Card">
-    <h1>Get a $100 7-Eleven Gift Card!</h1>
-    <p>Complete a simple registration to enter the giveaway.<br> No credit card needed. Just your email and zip code!</p>
-    <a class="button" href="https://smrturl.co/a/s020b612f18/62?s1=fbclick1" target="_blank">🎉 Claim Your Reward</a>
-    <p class="note">*Offer available for US residents only. Terms apply.</p>
-  </div>
+
+  <img src="img/7eleven.jpg" alt="7-Eleven Gift Card" />
+
+  <h1>🎁 Get a $100 7-Eleven Gift Card!</h1>
+
+  <p>
+    Complete a simple registration to enter the giveaway.<br>
+    No credit card needed. Just your email and zip code!
+  </p>
+
+  <a href="https://smrturl.co/a/s020b612f18/62?s1=fbclick1" class="button">
+    🎉 Claim Your Reward
+  </a>
+
+  <p class="note">
+    *Offer available for US residents only. Terms apply.
+  </p>
+
 </body>
 </html>
