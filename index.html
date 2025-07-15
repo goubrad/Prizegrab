@@ -3,71 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🎁 Win a $100 7-Eleven Gift Card</title>
+  <title>Win a $100 7-Eleven Gift Card</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      padding: 20px;
-      text-align: center;
       margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .offer-image {
+      width: 100%;
+      border-radius: 10px;
       margin-bottom: 20px;
     }
 
     h1 {
-      color: #d32f2f;
       font-size: 22px;
+      color: #d32f2f;
+      margin-bottom: 10px;
     }
 
     p {
-      color: #333;
       font-size: 16px;
-      margin: 10px 0;
+      color: #333;
+      margin-bottom: 20px;
     }
 
     a.button {
       display: inline-block;
-      background-color: #e53935;
+      padding: 12px 25px;
+      background-color: #d32f2f;
       color: white;
-      padding: 12px 24px;
-      font-size: 18px;
-      border-radius: 8px;
+      font-size: 16px;
       text-decoration: none;
-      margin-top: 20px;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
 
     a.button:hover {
       background-color: #b71c1c;
     }
 
-    small {
-      display: block;
+    .note {
+      font-size: 13px;
       color: #777;
       margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 20px; }
+      p { font-size: 15px; }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <img class="offer-image" src="https://i.ibb.co/Fn0DKyz/7eleven-giftcard.png" alt="7-Eleven Gift Card" />
+    
+    <h1>Get a $100 7-Eleven Gift Card! 🎁</h1>
+    <p>Complete a simple registration to enter the giveaway.<br>
+      No credit card needed. Just your email and zip code!
+    </p>
 
-  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD...=="
-       alt="7-Eleven Gift Card" />
+    <a class="button" href="https://smrturl.co/a/s020b612f18/62?s1=fbclick1" target="_blank">
+      🎉 Claim Your Reward
+    </a>
 
-  <h1>🎁 Get a $100 7-Eleven Gift Card!</h1>
-  <p>Complete a simple registration to enter the giveaway.</p>
-  <p>No credit card needed. Just your email and zip code!</p>
-
-  <a class="button" href="https://smrturl.co/a/s020b612f18/62?s1=fbclick1">
-    🎉 Claim Your Reward
-  </a>
-
-  <small>*Offer available for US residents only. Terms apply.</small>
-
+    <div class="note">
+      *Offer available for US residents only. Terms apply.
+    </div>
+  </div>
 </body>
 </html>
